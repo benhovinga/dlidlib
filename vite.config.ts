@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "dlidlib",
-      fileName: "dlidlib",
+      fileName: "index",
     },
   },
   plugins: [

@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
+    "outFile": "./dist/index.d.ts",
     "declaration": true,
     "emitDeclarationOnly": true,
     "rootDir": "./src"
