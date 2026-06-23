@@ -27,12 +27,20 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.0.0",
+    "@eslint/markdown": "^8.0.2",
     "@types/node": "^26.0.0",
     "@vitest/coverage-v8": "4.1.9",
+    "eslint": "^10.5.0",
+    "globals": "^17.7.0",
+    "jiti": "^2.7.0",
     "typescript": "~6.0.2",
+    "typescript-eslint": "^8.61.1",
     "unplugin-dts": "^1.0.2",
     "vite": "^8.0.12",
     "vitest": "^4.1.9"
