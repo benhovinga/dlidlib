@@ -1,18 +1,39 @@
 {
-  "name": "dlidlib",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@benhovinga/dlidlib",
+  "version": "0.1.0-alpha",
   "type": "module",
+  "description": "Library to parse data in the barcode found on the back of North American identification and driver license cards.",
+  "keywords": [
+    "library",
+    "aamva",
+    "driver license",
+    "identification card",
+    "barcode",
+    "pdf417"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dlidlib.umd.cjs",
+  "module": "./dist/dlidlib.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/dlidlib.js",
+      "require": "./dist/dlidlib.umd.cjs"
+    }
+  },
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
     "test": "vitest"
   },
   "devDependencies": {
+    "@types/node": "^26.0.0",
     "@vitest/coverage-v8": "4.1.9",
     "typescript": "~6.0.2",
+    "unplugin-dts": "^1.0.2",
     "vite": "^8.0.12",
     "vitest": "^4.1.9"
-  }
+  },
+  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
 }
