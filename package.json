@@ -4,6 +4,7 @@
   "description": "Library to parse data in the barcode found on the back of North American identification and driver license cards.",
   "author": "Benjamin P.C. Hovinga",
   "license": "MIT",
+  "private": false,
   "keywords": [
     "library",
     "aamva",
@@ -28,6 +29,7 @@
   "scripts": {
     "build": "tsc && vite build",
     "test": "vitest",
+    "test:ci": "vitest run",
     "lint": "eslint"
   },
   "devDependencies": {
