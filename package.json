@@ -1,8 +1,9 @@
 {
   "name": "@benhovinga/dlidlib",
   "version": "0.1.0-alpha",
-  "type": "module",
   "description": "Library to parse data in the barcode found on the back of North American identification and driver license cards.",
+  "author": "Benjamin P.C. Hovinga",
+  "license": "MIT",
   "keywords": [
     "library",
     "aamva",
@@ -11,6 +12,7 @@
     "barcode",
     "pdf417"
   ],
+  "type": "module",
   "files": [
     "dist"
   ],
