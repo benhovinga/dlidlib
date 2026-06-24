@@ -1,5 +1,3 @@
-import { trimBefore } from "./utils";
-
 export interface FileHeader {
   issuerId: number;
   aamvaVersion: number;
@@ -28,6 +26,22 @@ const DATA_ELEMENT_SEPARATOR = "\n";
 const RECORD_SEPARATOR = "\x1e";
 const SEGMENT_TERMINATOR = "\r";
 const FILE_TYPE = "ANSI ";
+
+/**
+ * Returns `str` with everything before `char` removed. If `char` is not found
+ * it will return `str` untouched.
+ *
+ * @example
+ * ```js
+ * trimBefore("@", "hello@world"); // "@world"
+ * ```
+ */
+export function trimBefore(char: string, str: string): string {
+  if (typeof char !== "string" || typeof str !== "string")
+    throw new TypeError("Inputs must be string type");
+  const index = str.indexOf(char);
+  return str.slice(index >= 0 ? index : 0);
+}
 
 export function headerLength(aamvaVersion: number): 19 | 21 {
   if (typeof aamvaVersion !== "number" || !Number.isInteger(aamvaVersion))
