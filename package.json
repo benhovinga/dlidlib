@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/benhovinga/dlidlib#readme",
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "!src/**/*.spec.ts"
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
