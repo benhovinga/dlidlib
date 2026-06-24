@@ -26,8 +26,9 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "pnpm clean && tsc",
-    "clean": "rimraf dist",
+    "build": "pnpm clean:build && tsc",
+    "clean:build": "rimraf dist",
+    "clean:modules": "rimraf node_modules",
     "test": "vitest",
     "test:ci": "vitest run",
     "lint": "eslint",
