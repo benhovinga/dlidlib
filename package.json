@@ -12,6 +12,14 @@
     "barcode",
     "pdf417"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benhovinga/dlidlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benhovinga/dlidlib/issues"
+  },
+  "homepage": "https://github.com/benhovinga/dlidlib#readme",
   "files": [
     "dist"
   ],
