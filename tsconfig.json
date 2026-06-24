@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2023",
-    "module": "commonjs",
+    "module": "esnext",
     "lib": ["ES2023"],
     "outDir": "./dist",
     "rootDir": "./src",

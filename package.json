@@ -25,8 +25,12 @@
     "src",
     "!src/**/*.spec.ts"
   ],
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "type": "module",
+  "main": "./src/index.ts",
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
   "scripts": {
     "build": "pnpm clean:build && tsc",
     "clean:build": "rimraf dist",
