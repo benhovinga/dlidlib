@@ -1,1 +1,1 @@
-export { parseBarcodeString } from "./barcode";
+export * as barcode from "./barcode";
