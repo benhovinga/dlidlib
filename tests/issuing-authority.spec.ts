@@ -12,6 +12,14 @@ describe("Test the ISSUING_AUTHORITIES constant", () => {
 });
 
 describe("Test the getAuthorityById() function", () => {
+  test("can return a valid authority", () => {
+    expect(getAuthorityById(604426)).toEqual({
+      abbr: "PE",
+      country: "Canada",
+      issuerId: 604426,
+      jurisdiction: "Prince Edward Island",
+    });
+  });
   test("can return undefined when issuer id was not found", () => {
     expect(getAuthorityById(0)).toBe(undefined);
   });
