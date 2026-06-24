@@ -1,449 +1,104 @@
-export interface IssuingAuthority {
-  issuerId: number;
-  jurisdiction: string;
-  abbr: string | null;
-  country: "Canada" | "USA" | "Mexico";
+export type AuthorityCountry = "Canada" | "USA" | "Mexico";
+
+class IssuingAuthority {
+  static readonly AUTHORITIES: readonly IssuingAuthority[] = Object.freeze([
+    new IssuingAuthority(604426, "Prince Edward Island", "PE", "Canada"),
+    new IssuingAuthority(604427, "American Samoa", "AS", "USA"),
+    new IssuingAuthority(604428, "Quebec", "QC", "Canada"),
+    new IssuingAuthority(604429, "Yukon", "YT", "Canada"),
+    new IssuingAuthority(604430, "Norther Marianna Islands", "MP", "USA"),
+    new IssuingAuthority(604431, "Puerto Rico", "PR", "USA"),
+    new IssuingAuthority(604432, "Alberta", "AB", "Canada"),
+    new IssuingAuthority(604433, "Nunavut", "NU", "Canada"),
+    new IssuingAuthority(604434, "Northwest Territories", "NT", "Canada"),
+    new IssuingAuthority(636000, "Virginia", "VA", "USA"),
+    new IssuingAuthority(636001, "New York", "NY", "USA"),
+    new IssuingAuthority(636002, "Massachusetts", "MA", "USA"),
+    new IssuingAuthority(636003, "Maryland", "MD", "USA"),
+    new IssuingAuthority(636004, "North Carolina", "NC", "USA"),
+    new IssuingAuthority(636005, "South Carolina", "SC", "USA"),
+    new IssuingAuthority(636006, "Connecticut", "CT", "USA"),
+    new IssuingAuthority(636007, "Louisiana", "LA", "USA"),
+    new IssuingAuthority(636008, "Montana", "MT", "USA"),
+    new IssuingAuthority(636009, "New Mexico", "NM", "USA"),
+    new IssuingAuthority(636010, "Florida", "FL", "USA"),
+    new IssuingAuthority(636011, "Delaware", "DE", "USA"),
+    new IssuingAuthority(636012, "Ontario", "ON", "Canada"),
+    new IssuingAuthority(636013, "Nova Scotia", "NS", "Canada"),
+    new IssuingAuthority(636014, "California", "CA", "USA"),
+    new IssuingAuthority(636015, "Texas", "TX", "USA"),
+    new IssuingAuthority(636016, "Newfoundland", "NF", "Canada"),
+    new IssuingAuthority(636017, "New Brunswick", "NB", "Canada"),
+    new IssuingAuthority(636018, "Iowa", "IA", "USA"),
+    new IssuingAuthority(636019, "Guam", "GU", "USA"),
+    new IssuingAuthority(636020, "Colorado", "GM", "USA"),
+    new IssuingAuthority(636021, "Arkansas", "AR", "USA"),
+    new IssuingAuthority(636022, "Kansas", "KS", "USA"),
+    new IssuingAuthority(636023, "Ohio", "OH", "USA"),
+    new IssuingAuthority(636024, "Vermont", "VT", "USA"),
+    new IssuingAuthority(636025, "Pennsylvania", "PA", "USA"),
+    new IssuingAuthority(636026, "Arizona", "AZ", "USA"),
+    new IssuingAuthority(636027, "State Dept. (Diplomatic)", null, "USA"),
+    new IssuingAuthority(636028, "British Columbia", "BC", "Canada"),
+    new IssuingAuthority(636029, "Oregon", "OR", "USA"),
+    new IssuingAuthority(636030, "Missouri", "MO", "USA"),
+    new IssuingAuthority(636031, "Wisconsin", "WI", "USA"),
+    new IssuingAuthority(636032, "Michigan", "MI", "USA"),
+    new IssuingAuthority(636033, "Alabama", "AL", "USA"),
+    new IssuingAuthority(636034, "North Dakota", "ND", "USA"),
+    new IssuingAuthority(636035, "Illinois", "IL", "USA"),
+    new IssuingAuthority(636036, "New Jersey", "NJ", "USA"),
+    new IssuingAuthority(636037, "Indiana", "IN", "USA"),
+    new IssuingAuthority(636038, "Minnesota", "MN", "USA"),
+    new IssuingAuthority(636039, "New Hampshire", "NH", "USA"),
+    new IssuingAuthority(636040, "Utah", "UT", "USA"),
+    new IssuingAuthority(636041, "Maine", "ME", "USA"),
+    new IssuingAuthority(636042, "South Dakota", "SD", "USA"),
+    new IssuingAuthority(636043, "District of Columbia", "DC", "USA"),
+    new IssuingAuthority(636044, "Saskatchewan", "SK", "Canada"),
+    new IssuingAuthority(636045, "Washington", "WA", "USA"),
+    new IssuingAuthority(636046, "Kentucky", "KY", "USA"),
+    new IssuingAuthority(636047, "Hawaii", "HI", "USA"),
+    new IssuingAuthority(636048, "Manitoba", "MB", "Canada"),
+    new IssuingAuthority(636049, "Nevada", "NV", "USA"),
+    new IssuingAuthority(636050, "Idaho", "ID", "USA"),
+    new IssuingAuthority(636051, "Mississippi", "MS", "USA"),
+    new IssuingAuthority(636052, "Rhode Island", "RI", "USA"),
+    new IssuingAuthority(636053, "Tennessee", "TN", "USA"),
+    new IssuingAuthority(636054, "Nebraska", "NE", "USA"),
+    new IssuingAuthority(636055, "Georgia", "GA", "USA"),
+    new IssuingAuthority(636056, "Coahuila", "CU", "Mexico"),
+    new IssuingAuthority(636057, "Hidalgo", "HL", "Mexico"),
+    new IssuingAuthority(636058, "Oklahoma", "OK", "USA"),
+    new IssuingAuthority(636059, "Alaska", "AK", "USA"),
+    new IssuingAuthority(636060, "Wyoming", "WY", "USA"),
+    new IssuingAuthority(636061, "West Virginia", "WV", "USA"),
+    new IssuingAuthority(636062, "Virgin Islands", "VI", "USA"),
+  ]);
+
+  readonly issuerId: number;
+  readonly jurisdiction: string;
+  readonly abbr: string | null;
+  readonly country: AuthorityCountry;
+
+  constructor(
+    issuerId: number,
+    jurisdiction: string,
+    abbr: string | null,
+    country: AuthorityCountry,
+  ) {
+    this.issuerId = issuerId;
+    this.jurisdiction = jurisdiction;
+    this.abbr = abbr;
+    this.country = country;
+    Object.freeze(this);
+  }
+
+  static getAuthorityById(issuerId: number): IssuingAuthority | undefined {
+    return this.AUTHORITIES.filter(
+      (authority) => authority.issuerId === issuerId,
+    )[0];
+  }
 }
 
-export const ISSUING_AUTHORITIES: IssuingAuthority[] = [
-  {
-    issuerId: 604426,
-    jurisdiction: "Prince Edward Island",
-    abbr: "PE",
-    country: "Canada",
-  },
-  {
-    issuerId: 604427,
-    jurisdiction: "American Samoa",
-    abbr: "AS",
-    country: "USA",
-  },
-  {
-    issuerId: 604428,
-    jurisdiction: "Quebec",
-    abbr: "QC",
-    country: "Canada",
-  },
-  {
-    issuerId: 604429,
-    jurisdiction: "Yukon",
-    abbr: "YT",
-    country: "Canada",
-  },
-  {
-    issuerId: 604430,
-    jurisdiction: "Norther Marianna Islands",
-    abbr: "MP",
-    country: "USA",
-  },
-  {
-    issuerId: 604431,
-    jurisdiction: "Puerto Rico",
-    abbr: "PR",
-    country: "USA",
-  },
-  {
-    issuerId: 604432,
-    jurisdiction: "Alberta",
-    abbr: "AB",
-    country: "Canada",
-  },
-  {
-    issuerId: 604433,
-    jurisdiction: "Nunavut",
-    abbr: "NU",
-    country: "Canada",
-  },
-  {
-    issuerId: 604434,
-    jurisdiction: "Northwest Territories",
-    abbr: "NT",
-    country: "Canada",
-  },
-  {
-    issuerId: 636000,
-    jurisdiction: "Virginia",
-    abbr: "VA",
-    country: "USA",
-  },
-  {
-    issuerId: 636001,
-    jurisdiction: "New York",
-    abbr: "NY",
-    country: "USA",
-  },
-  {
-    issuerId: 636002,
-    jurisdiction: "Massachusetts",
-    abbr: "MA",
-    country: "USA",
-  },
-  {
-    issuerId: 636003,
-    jurisdiction: "Maryland",
-    abbr: "MD",
-    country: "USA",
-  },
-  {
-    issuerId: 636004,
-    jurisdiction: "North Carolina",
-    abbr: "NC",
-    country: "USA",
-  },
-  {
-    issuerId: 636005,
-    jurisdiction: "South Carolina",
-    abbr: "SC",
-    country: "USA",
-  },
-  {
-    issuerId: 636006,
-    jurisdiction: "Connecticut",
-    abbr: "CT",
-    country: "USA",
-  },
-  {
-    issuerId: 636007,
-    jurisdiction: "Louisiana",
-    abbr: "LA",
-    country: "USA",
-  },
-  {
-    issuerId: 636008,
-    jurisdiction: "Montana",
-    abbr: "MT",
-    country: "USA",
-  },
-  {
-    issuerId: 636009,
-    jurisdiction: "New Mexico",
-    abbr: "NM",
-    country: "USA",
-  },
-  {
-    issuerId: 636010,
-    jurisdiction: "Florida",
-    abbr: "FL",
-    country: "USA",
-  },
-  {
-    issuerId: 636011,
-    jurisdiction: "Delaware",
-    abbr: "DE",
-    country: "USA",
-  },
-  {
-    issuerId: 636012,
-    jurisdiction: "Ontario",
-    abbr: "ON",
-    country: "Canada",
-  },
-  {
-    issuerId: 636013,
-    jurisdiction: "Nova Scotia",
-    abbr: "NS",
-    country: "Canada",
-  },
-  {
-    issuerId: 636014,
-    jurisdiction: "California",
-    abbr: "CA",
-    country: "USA",
-  },
-  {
-    issuerId: 636015,
-    jurisdiction: "Texas",
-    abbr: "TX",
-    country: "USA",
-  },
-  {
-    issuerId: 636016,
-    jurisdiction: "Newfoundland",
-    abbr: "NF",
-    country: "Canada",
-  },
-  {
-    issuerId: 636017,
-    jurisdiction: "New Brunswick",
-    abbr: "NB",
-    country: "Canada",
-  },
-  {
-    issuerId: 636018,
-    jurisdiction: "Iowa",
-    abbr: "IA",
-    country: "USA",
-  },
-  {
-    issuerId: 636019,
-    jurisdiction: "Guam",
-    abbr: "GU",
-    country: "USA",
-  },
-  {
-    issuerId: 636020,
-    jurisdiction: "Colorado",
-    abbr: "GM",
-    country: "USA",
-  },
-  {
-    issuerId: 636021,
-    jurisdiction: "Arkansas",
-    abbr: "AR",
-    country: "USA",
-  },
-  {
-    issuerId: 636022,
-    jurisdiction: "Kansas",
-    abbr: "KS",
-    country: "USA",
-  },
-  {
-    issuerId: 636023,
-    jurisdiction: "Ohio",
-    abbr: "OH",
-    country: "USA",
-  },
-  {
-    issuerId: 636024,
-    jurisdiction: "Vermont",
-    abbr: "VT",
-    country: "USA",
-  },
-  {
-    issuerId: 636025,
-    jurisdiction: "Pennsylvania",
-    abbr: "PA",
-    country: "USA",
-  },
-  {
-    issuerId: 636026,
-    jurisdiction: "Arizona",
-    abbr: "AZ",
-    country: "USA",
-  },
-  {
-    issuerId: 636027,
-    jurisdiction: "State Dept. (Diplomatic)",
-    abbr: null,
-    country: "USA",
-  },
-  {
-    issuerId: 636028,
-    jurisdiction: "British Columbia",
-    abbr: "BC",
-    country: "Canada",
-  },
-  {
-    issuerId: 636029,
-    jurisdiction: "Oregon",
-    abbr: "OR",
-    country: "USA",
-  },
-  {
-    issuerId: 636030,
-    jurisdiction: "Missouri",
-    abbr: "MO",
-    country: "USA",
-  },
-  {
-    issuerId: 636031,
-    jurisdiction: "Wisconsin",
-    abbr: "WI",
-    country: "USA",
-  },
-  {
-    issuerId: 636032,
-    jurisdiction: "Michigan",
-    abbr: "MI",
-    country: "USA",
-  },
-  {
-    issuerId: 636033,
-    jurisdiction: "Alabama",
-    abbr: "AL",
-    country: "USA",
-  },
-  {
-    issuerId: 636034,
-    jurisdiction: "North Dakota",
-    abbr: "ND",
-    country: "USA",
-  },
-  {
-    issuerId: 636035,
-    jurisdiction: "Illinois",
-    abbr: "IL",
-    country: "USA",
-  },
-  {
-    issuerId: 636036,
-    jurisdiction: "New Jersey",
-    abbr: "NJ",
-    country: "USA",
-  },
-  {
-    issuerId: 636037,
-    jurisdiction: "Indiana",
-    abbr: "IN",
-    country: "USA",
-  },
-  {
-    issuerId: 636038,
-    jurisdiction: "Minnesota",
-    abbr: "MN",
-    country: "USA",
-  },
-  {
-    issuerId: 636039,
-    jurisdiction: "New Hampshire",
-    abbr: "NH",
-    country: "USA",
-  },
-  {
-    issuerId: 636040,
-    jurisdiction: "Utah",
-    abbr: "UT",
-    country: "USA",
-  },
-  {
-    issuerId: 636041,
-    jurisdiction: "Maine",
-    abbr: "ME",
-    country: "USA",
-  },
-  {
-    issuerId: 636042,
-    jurisdiction: "South Dakota",
-    abbr: "SD",
-    country: "USA",
-  },
-  {
-    issuerId: 636043,
-    jurisdiction: "District of Columbia",
-    abbr: "DC",
-    country: "USA",
-  },
-  {
-    issuerId: 636044,
-    jurisdiction: "Saskatchewan",
-    abbr: "SK",
-    country: "Canada",
-  },
-  {
-    issuerId: 636045,
-    jurisdiction: "Washington",
-    abbr: "WA",
-    country: "USA",
-  },
-  {
-    issuerId: 636046,
-    jurisdiction: "Kentucky",
-    abbr: "KY",
-    country: "USA",
-  },
-  {
-    issuerId: 636047,
-    jurisdiction: "Hawaii",
-    abbr: "HI",
-    country: "USA",
-  },
-  {
-    issuerId: 636048,
-    jurisdiction: "Manitoba",
-    abbr: "MB",
-    country: "Canada",
-  },
-  {
-    issuerId: 636049,
-    jurisdiction: "Nevada",
-    abbr: "NV",
-    country: "USA",
-  },
-  {
-    issuerId: 636050,
-    jurisdiction: "Idaho",
-    abbr: "ID",
-    country: "USA",
-  },
-  {
-    issuerId: 636051,
-    jurisdiction: "Mississippi",
-    abbr: "MS",
-    country: "USA",
-  },
-  {
-    issuerId: 636052,
-    jurisdiction: "Rhode Island",
-    abbr: "RI",
-    country: "USA",
-  },
-  {
-    issuerId: 636053,
-    jurisdiction: "Tennessee",
-    abbr: "TN",
-    country: "USA",
-  },
-  {
-    issuerId: 636054,
-    jurisdiction: "Nebraska",
-    abbr: "NE",
-    country: "USA",
-  },
-  {
-    issuerId: 636055,
-    jurisdiction: "Georgia",
-    abbr: "GA",
-    country: "USA",
-  },
-  {
-    issuerId: 636056,
-    jurisdiction: "Coahuila",
-    abbr: "CU",
-    country: "Mexico",
-  },
-  {
-    issuerId: 636057,
-    jurisdiction: "Hidalgo",
-    abbr: "HL",
-    country: "Mexico",
-  },
-  {
-    issuerId: 636058,
-    jurisdiction: "Oklahoma",
-    abbr: "OK",
-    country: "USA",
-  },
-  {
-    issuerId: 636059,
-    jurisdiction: "Alaska",
-    abbr: "AK",
-    country: "USA",
-  },
-  {
-    issuerId: 636060,
-    jurisdiction: "Wyoming",
-    abbr: "WY",
-    country: "USA",
-  },
-  {
-    issuerId: 636061,
-    jurisdiction: "West Virginia",
-    abbr: "WV",
-    country: "USA",
-  },
-  {
-    issuerId: 636062,
-    jurisdiction: "Virgin Islands",
-    abbr: "VI",
-    country: "USA",
-  },
-];
-
-export function getAuthorityById(
-  issuerId: number,
-): IssuingAuthority | undefined {
-  return ISSUING_AUTHORITIES.filter(
-    (authority) => authority.issuerId === issuerId,
-  )[0];
-}
+export default IssuingAuthority;

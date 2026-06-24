@@ -1,2 +1,4 @@
+import IssuingAuthority from "./issuing-authority";
+
 export * as barcode from "./barcode";
-export * as issuingAuthority from "./issuing-authority";
+export { IssuingAuthority };
