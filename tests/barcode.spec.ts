@@ -10,7 +10,7 @@ import {
   type SubfileDesignator,
   type Subfile,
   type BarcodeFile,
-} from "./barcode";
+} from "../src/barcode";
 
 interface TestDataItem {
   aamvaVersion: number;

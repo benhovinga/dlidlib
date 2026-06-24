@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest";
 
-import { trimBefore } from "./utils";
+import { trimBefore } from "../src/utils";
 
 describe("Test the trim_before() utility function", () => {
   test("can return the string unchanged when char is first", () => {
