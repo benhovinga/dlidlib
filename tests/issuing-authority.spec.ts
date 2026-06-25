@@ -14,7 +14,7 @@ describe("Test the AUTHORITIES static property", () => {
   });
 });
 
-describe("Test the getAuthorityById() function", () => {
+describe("Test the getAuthorityById() static method", () => {
   test("can return a valid authority", () => {
     expect(IssuingAuthority.getAuthorityById(604426)).toEqual({
       abbr: "PE",
