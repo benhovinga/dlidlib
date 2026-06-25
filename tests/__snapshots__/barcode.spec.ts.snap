@@ -1,0 +1,345 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Test the parse() static method > can parse barcodeString (version: 1) 1`] = `
+BarcodeFile {
+  "header": {
+    "aamvaVersion": 1,
+    "issuerId": 636000,
+    "jurisdictionVersion": 0,
+    "numberOfEntries": 2,
+  },
+  "subfiles": [
+    {
+      "elements": {
+        "DAA": "PUBLIC,JOHN,Q",
+        "DAG": "123 MAIN STREET",
+        "DAI": "ANYTOWN",
+        "DAJ": "VA",
+        "DAK": "123459999  ",
+        "DAQ": "0123456789ABC",
+        "DAR": "DM  ",
+        "DAS": "          ",
+        "DAT": "     ",
+        "DAU": "509",
+        "DAW": "175",
+        "DAY": "BL ",
+        "DAZ": "BR ",
+        "DBA": "20011201",
+        "DBB": "19761123",
+        "DBC": "M",
+        "DBD": "19961201",
+      },
+      "subfileType": "DL",
+    },
+    {
+      "elements": {
+        "ZVA": "JURISDICTIONDEFINEDELEMENT",
+      },
+      "subfileType": "ZV",
+    },
+  ],
+}
+`;
+
+exports[`Test the parse() static method > can parse barcodeString (version: 4) 1`] = `
+BarcodeFile {
+  "header": {
+    "aamvaVersion": 4,
+    "issuerId": 636000,
+    "jurisdictionVersion": 0,
+    "numberOfEntries": 2,
+  },
+  "subfiles": [
+    {
+      "elements": {
+        "DAC": "MICHAEL",
+        "DAD": "JOHN",
+        "DAG": "2300 WEST BROAD STREET",
+        "DAI": "RICHMOND",
+        "DAJ": "VA",
+        "DAK": "232690000  ",
+        "DAQ": "T64235789",
+        "DAU": "068 in",
+        "DAY": "BRO",
+        "DBA": "12102012",
+        "DBB": "06061986",
+        "DBC": "1",
+        "DBD": "06062008",
+        "DCA": "D",
+        "DCB": "K",
+        "DCD": "PH",
+        "DCF": "2424244747474786102204",
+        "DCG": "USA",
+        "DCK": "123456789",
+        "DCS": "SAMPLE",
+        "DCU": "JR",
+        "DDA": "M",
+        "DDB": "06062008",
+        "DDC": "06062009",
+        "DDD": "1",
+        "DDE": "N",
+        "DDF": "N",
+        "DDG": "N",
+      },
+      "subfileType": "DL",
+    },
+    {
+      "elements": {
+        "ZVA": "01",
+      },
+      "subfileType": "ZV",
+    },
+  ],
+}
+`;
+
+exports[`Test the parse() static method > can parse barcodeString (version: 10) 1`] = `
+BarcodeFile {
+  "header": {
+    "aamvaVersion": 10,
+    "issuerId": 636000,
+    "jurisdictionVersion": 1,
+    "numberOfEntries": 2,
+  },
+  "subfiles": [
+    {
+      "elements": {
+        "DAC": "MICHAEL",
+        "DAD": "JOHN",
+        "DAG": "2300 WEST BROAD STREET",
+        "DAI": "RICHMOND",
+        "DAJ": "VA",
+        "DAK": "232690000  ",
+        "DAQ": "T64235789",
+        "DAU": "068 in",
+        "DAY": "BRO",
+        "DBA": "12102024",
+        "DBB": "06061986",
+        "DBC": "1",
+        "DBD": "06062019",
+        "DCA": "D",
+        "DCB": "K",
+        "DCD": "PH",
+        "DCF": "2424244747474786102204",
+        "DCG": "USA",
+        "DCK": "123456789",
+        "DCS": "SAMPLE",
+        "DCU": "JR",
+        "DDA": "F",
+        "DDB": "06062018",
+        "DDC": "06062020",
+        "DDD": "1",
+        "DDE": "N",
+        "DDF": "N",
+        "DDG": "N",
+      },
+      "subfileType": "DL",
+    },
+    {
+      "elements": {
+        "ZVA": "01",
+      },
+      "subfileType": "ZV",
+    },
+  ],
+}
+`;
+
+exports[`Test the parseFileHeader() static method > can parse header (version 1) 1`] = `
+{
+  "aamvaVersion": 1,
+  "issuerId": 636000,
+  "jurisdictionVersion": 0,
+  "numberOfEntries": 2,
+}
+`;
+
+exports[`Test the parseFileHeader() static method > can parse header (version 4) 1`] = `
+{
+  "aamvaVersion": 4,
+  "issuerId": 636000,
+  "jurisdictionVersion": 0,
+  "numberOfEntries": 2,
+}
+`;
+
+exports[`Test the parseFileHeader() static method > can parse header (version 10) 1`] = `
+{
+  "aamvaVersion": 10,
+  "issuerId": 636000,
+  "jurisdictionVersion": 1,
+  "numberOfEntries": 2,
+}
+`;
+
+exports[`Test the parseSubfile() static method > can parse subfile (version: 1, index: 0) 1`] = `
+{
+  "elements": {
+    "DAA": "PUBLIC,JOHN,Q",
+    "DAG": "123 MAIN STREET",
+    "DAI": "ANYTOWN",
+    "DAJ": "VA",
+    "DAK": "123459999  ",
+    "DAQ": "0123456789ABC",
+    "DAR": "DM  ",
+    "DAS": "          ",
+    "DAT": "     ",
+    "DAU": "509",
+    "DAW": "175",
+    "DAY": "BL ",
+    "DAZ": "BR ",
+    "DBA": "20011201",
+    "DBB": "19761123",
+    "DBC": "M",
+    "DBD": "19961201",
+  },
+  "subfileType": "DL",
+}
+`;
+
+exports[`Test the parseSubfile() static method > can parse subfile (version: 1, index: 1) 1`] = `
+{
+  "elements": {
+    "ZVA": "JURISDICTIONDEFINEDELEMENT",
+  },
+  "subfileType": "ZV",
+}
+`;
+
+exports[`Test the parseSubfile() static method > can parse subfile (version: 4, index: 0) 1`] = `
+{
+  "elements": {
+    "DAC": "MICHAEL",
+    "DAD": "JOHN",
+    "DAG": "2300 WEST BROAD STREET",
+    "DAI": "RICHMOND",
+    "DAJ": "VA",
+    "DAK": "232690000  ",
+    "DAQ": "T64235789",
+    "DAU": "068 in",
+    "DAY": "BRO",
+    "DBA": "12102012",
+    "DBB": "06061986",
+    "DBC": "1",
+    "DBD": "06062008",
+    "DCA": "D",
+    "DCB": "K",
+    "DCD": "PH",
+    "DCF": "2424244747474786102204",
+    "DCG": "USA",
+    "DCK": "123456789",
+    "DCS": "SAMPLE",
+    "DCU": "JR",
+    "DDA": "M",
+    "DDB": "06062008",
+    "DDC": "06062009",
+    "DDD": "1",
+    "DDE": "N",
+    "DDF": "N",
+    "DDG": "N",
+  },
+  "subfileType": "DL",
+}
+`;
+
+exports[`Test the parseSubfile() static method > can parse subfile (version: 4, index: 1) 1`] = `
+{
+  "elements": {
+    "ZVA": "01",
+  },
+  "subfileType": "ZV",
+}
+`;
+
+exports[`Test the parseSubfile() static method > can parse subfile (version: 10, index: 0) 1`] = `
+{
+  "elements": {
+    "DAC": "MICHAEL",
+    "DAD": "JOHN",
+    "DAG": "2300 WEST BROAD STREET",
+    "DAI": "RICHMOND",
+    "DAJ": "VA",
+    "DAK": "232690000  ",
+    "DAQ": "T64235789",
+    "DAU": "068 in",
+    "DAY": "BRO",
+    "DBA": "12102024",
+    "DBB": "06061986",
+    "DBC": "1",
+    "DBD": "06062019",
+    "DCA": "D",
+    "DCB": "K",
+    "DCD": "PH",
+    "DCF": "2424244747474786102204",
+    "DCG": "USA",
+    "DCK": "123456789",
+    "DCS": "SAMPLE",
+    "DCU": "JR",
+    "DDA": "F",
+    "DDB": "06062018",
+    "DDC": "06062020",
+    "DDD": "1",
+    "DDE": "N",
+    "DDF": "N",
+    "DDG": "N",
+  },
+  "subfileType": "DL",
+}
+`;
+
+exports[`Test the parseSubfile() static method > can parse subfile (version: 10, index: 1) 1`] = `
+{
+  "elements": {
+    "ZVA": "01",
+  },
+  "subfileType": "ZV",
+}
+`;
+
+exports[`Test the parseSubfileDesignator() static method > can parse subfile designator (version: 1, index: 0) 1`] = `
+{
+  "length": 187,
+  "offset": 39,
+  "subfileType": "DL",
+}
+`;
+
+exports[`Test the parseSubfileDesignator() static method > can parse subfile designator (version: 1, index: 1) 1`] = `
+{
+  "length": 32,
+  "offset": 226,
+  "subfileType": "ZV",
+}
+`;
+
+exports[`Test the parseSubfileDesignator() static method > can parse subfile designator (version: 4, index: 0) 1`] = `
+{
+  "length": 278,
+  "offset": 41,
+  "subfileType": "DL",
+}
+`;
+
+exports[`Test the parseSubfileDesignator() static method > can parse subfile designator (version: 4, index: 1) 1`] = `
+{
+  "length": 8,
+  "offset": 319,
+  "subfileType": "ZV",
+}
+`;
+
+exports[`Test the parseSubfileDesignator() static method > can parse subfile designator (version: 10, index: 0) 1`] = `
+{
+  "length": 278,
+  "offset": 41,
+  "subfileType": "DL",
+}
+`;
+
+exports[`Test the parseSubfileDesignator() static method > can parse subfile designator (version: 10, index: 1) 1`] = `
+{
+  "length": 8,
+  "offset": 319,
+  "subfileType": "ZV",
+}
+`;

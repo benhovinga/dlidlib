@@ -1,4 +1,14 @@
+import BarcodeFile, {
+  type FileHeader,
+  type SubfileDesignator,
+  type Subfile,
+} from "./barcode";
 import IssuingAuthority from "./issuing-authority";
 
-export * as barcode from "./barcode";
-export { IssuingAuthority };
+export {
+  BarcodeFile,
+  type FileHeader,
+  type SubfileDesignator,
+  type Subfile,
+  IssuingAuthority,
+};
