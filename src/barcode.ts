@@ -17,11 +17,11 @@ export interface Subfile {
 }
 
 class BarcodeFile {
-  protected static readonly COMPLIANCE_INDICATOR = "@";
-  protected static readonly DATA_ELEMENT_SEPARATOR = "\n";
-  protected static readonly RECORD_SEPARATOR = "\x1e";
-  protected static readonly SEGMENT_TERMINATOR = "\r";
-  protected static readonly FILE_TYPE = "ANSI ";
+  protected static readonly COMPLIANCE_INDICATOR = "\x40"; // Commercial At Sign (“@”) (ASCII/ISO 646 Decimal “64”) (ASCII/ISO 646 Hex “40”)
+  protected static readonly DATA_ELEMENT_SEPARATOR = "\x0a"; // Line Feed character (“LF” ASCII/ISO 646 Decimal “10”) (ASCII/ISO 646 Hex “0A”)
+  protected static readonly RECORD_SEPARATOR = "\x1e"; // Record Separator character (“RS” ASCII/ISO 646 Decimal “30”) (ASCII/ISO 646 Hex “1E”)
+  protected static readonly SEGMENT_TERMINATOR = "\x0D"; // Carriage Return character (“CR” ASCII/ISO 646 Decimal “13”) (ASCII/ISO 646 Hex “0D”)
+  protected static readonly FILE_TYPE = "ANSI "; // AAMVA compliant format
 
   public header: FileHeader;
   public subfiles: Subfile[];
