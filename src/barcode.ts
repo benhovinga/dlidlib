@@ -26,7 +26,7 @@ class BarcodeFile {
   public header: FileHeader;
   public subfiles: Subfile[];
 
-  public constructor(header: FileHeader, subfiles: Subfile[]) {
+  public constructor({ header, subfiles }: BarcodeFile) {
     this.header = header;
     this.subfiles = subfiles;
   }
@@ -51,7 +51,7 @@ class BarcodeFile {
       subfiles.push(subfile);
     }
 
-    return new BarcodeFile(header, subfiles);
+    return new BarcodeFile({ header, subfiles });
   }
 
   protected static headerLength(aamvaVersion: number): 19 | 21 {
