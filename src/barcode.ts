@@ -31,6 +31,12 @@ class BarcodeFile {
     this.subfiles = subfiles;
   }
 
+  /**
+   * Parses a barcode byte string message into a BarcodeFile object.
+   *
+   * @param barcodeString - A byte string style message from a barcode scanner
+   * @returns a new BarcodeFile object
+   */
   public static parse(barcodeString: string): BarcodeFile {
     if (typeof barcodeString !== "string")
       throw new TypeError("Argument 'barcodeString' must be of type 'string'.");
