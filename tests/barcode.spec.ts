@@ -35,17 +35,17 @@ const testBarcodeStrings: [number, string][] = [
 
 class BarcodeFileTestable extends BarcodeFile {
   public static testHeaderLength(aamvaVersion: number) {
-    return this.headerLength(aamvaVersion);
+    return this._headerLength(aamvaVersion);
   }
   public static testParseFileHeader(barcodeString: string) {
-    return this.parseFileHeader(barcodeString);
+    return this._parseFileHeader(barcodeString);
   }
   public static testParseSubfileDesignator(
     barcodeString: string,
     aamvaVersion: number,
     designatorIndex: number,
   ) {
-    return this.parseSubfileDesignator(
+    return this._parseSubfileDesignator(
       barcodeString,
       aamvaVersion,
       designatorIndex,
@@ -55,7 +55,7 @@ class BarcodeFileTestable extends BarcodeFile {
     barcodeString: string,
     designator: SubfileDesignator,
   ) {
-    return this.parseSubfile(barcodeString, designator);
+    return this._parseSubfile(barcodeString, designator);
   }
 }
 
