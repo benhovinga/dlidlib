@@ -32,6 +32,10 @@
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*.js"
+  },
   "scripts": {
     "build": "pnpm clean:build && tsc",
     "ci:check": "pnpm format && pnpm lint && pnpm test:ci && tsc --noEmit",
