@@ -158,18 +158,18 @@ class IssuingAuthority {
 
   readonly issuerId: number;
   readonly jurisdiction: string;
-  readonly abbr: JurisdictionCode | null;
+  readonly jurisdictionCode: JurisdictionCode | null;
   readonly country: AuthorityCountryCode;
 
   constructor(
     issuerId: number,
     jurisdiction: string,
-    abbr: JurisdictionCode | null,
+    jurisdictionCode: JurisdictionCode | null,
     country: AuthorityCountryCode,
   ) {
     this.issuerId = issuerId;
     this.jurisdiction = jurisdiction;
-    this.abbr = abbr;
+    this.jurisdictionCode = jurisdictionCode;
     this.country = country;
     Object.freeze(this);
   }
