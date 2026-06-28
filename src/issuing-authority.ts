@@ -1,5 +1,78 @@
 export type AuthorityCountry = "CAN" | "MEX" | "USA";
 
+export type JurisdictionCode =
+  | "AB"
+  | "AK"
+  | "AL"
+  | "AR"
+  | "AS"
+  | "AZ"
+  | "BC"
+  | "CA"
+  | "CT"
+  | "CU"
+  | "DC"
+  | "DE"
+  | "FL"
+  | "GA"
+  | "GM"
+  | "GU"
+  | "HI"
+  | "HL"
+  | "IA"
+  | "ID"
+  | "IL"
+  | "IN"
+  | "KS"
+  | "KY"
+  | "LA"
+  | "MA"
+  | "MB"
+  | "MD"
+  | "ME"
+  | "MI"
+  | "MN"
+  | "MO"
+  | "MP"
+  | "MS"
+  | "MT"
+  | "NB"
+  | "NC"
+  | "ND"
+  | "NE"
+  | "NF"
+  | "NH"
+  | "NJ"
+  | "NM"
+  | "NS"
+  | "NT"
+  | "NU"
+  | "NV"
+  | "NY"
+  | "OH"
+  | "OK"
+  | "ON"
+  | "OR"
+  | "PA"
+  | "PE"
+  | "PR"
+  | "QC"
+  | "RI"
+  | "SC"
+  | "SD"
+  | "SK"
+  | "TN"
+  | "TX"
+  | "UT"
+  | "VA"
+  | "VI"
+  | "VT"
+  | "WA"
+  | "WI"
+  | "WV"
+  | "WY"
+  | "YT";
+
 class IssuingAuthority {
   // Countries have been shortened to 3 characters in order to match subfile element DCG: Country Identification
   static readonly COUNTRIES: readonly AuthorityCountry[] = Object.freeze([
@@ -85,13 +158,13 @@ class IssuingAuthority {
 
   readonly issuerId: number;
   readonly jurisdiction: string;
-  readonly abbr: string | null;
+  readonly abbr: JurisdictionCode | null;
   readonly country: AuthorityCountry;
 
   constructor(
     issuerId: number,
     jurisdiction: string,
-    abbr: string | null,
+    abbr: JurisdictionCode | null,
     country: AuthorityCountry,
   ) {
     this.issuerId = issuerId;
