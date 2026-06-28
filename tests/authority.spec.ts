@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest";
 
-import IssuingAuthority from "../src/issuing-authority";
+import IssuingAuthority from "../src/authority";
 
 describe("Test the AUTHORITIES static property", () => {
   test("matches snapshot", () => {

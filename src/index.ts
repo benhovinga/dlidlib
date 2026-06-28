@@ -4,7 +4,7 @@ import BarcodeFile, {
   type Subfile,
 } from "./barcode";
 import { getDateParser, type DateObject, type DateParserFn } from "./dates";
-import IssuingAuthority from "./issuing-authority";
+import IssuingAuthority from "./authority";
 
 export {
   BarcodeFile,
