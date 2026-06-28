@@ -1,4 +1,4 @@
-export type AuthorityCountry = "CAN" | "MEX" | "USA";
+export type AuthorityCountryCode = "CAN" | "MEX" | "USA";
 
 export type JurisdictionCode =
   | "AB"
@@ -75,7 +75,7 @@ export type JurisdictionCode =
 
 class IssuingAuthority {
   // Countries have been shortened to 3 characters in order to match subfile element DCG: Country Identification
-  static readonly COUNTRIES: readonly AuthorityCountry[] = Object.freeze([
+  static readonly COUNTRIES: readonly AuthorityCountryCode[] = Object.freeze([
     "CAN",
     "MEX",
     "USA",
@@ -159,13 +159,13 @@ class IssuingAuthority {
   readonly issuerId: number;
   readonly jurisdiction: string;
   readonly abbr: JurisdictionCode | null;
-  readonly country: AuthorityCountry;
+  readonly country: AuthorityCountryCode;
 
   constructor(
     issuerId: number,
     jurisdiction: string,
     abbr: JurisdictionCode | null,
-    country: AuthorityCountry,
+    country: AuthorityCountryCode,
   ) {
     this.issuerId = issuerId;
     this.jurisdiction = jurisdiction;
