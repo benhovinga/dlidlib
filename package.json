@@ -6,9 +6,11 @@
   "license": "MIT",
   "keywords": [
     "library",
+    "typescript",
     "aamva",
-    "driver license",
-    "identification card",
+    "dlid",
+    "driver-license",
+    "identification-card",
     "barcode",
     "pdf417"
   ],
