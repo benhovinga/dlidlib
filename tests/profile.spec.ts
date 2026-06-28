@@ -26,17 +26,10 @@ describe("Testing the Profile class constructor", () => {
       expect(() => new Profile(testFn)).toThrow(errMsg);
     });
   });
-
-  test("throws Error if no valid subfiles found", () => {
-    const testObj = {};
-    const errMsg = "No valid subfiles found.";
-    try {
-      new Profile(testObj);
-    } catch (err) {
-      err.errors.forEach((error) => {
-        console.log(error.message);
-      });
-    }
-    expect(() => new Profile(testObj)).toThrow(AggregateError);
+  test("throws Error when aamvaVersion is 1 (not implemented)", () => {
+    // @ts-expect-error header property is missing properties
+    expect(() => new Profile({ header: { aamvaVersion: 1 } })).toThrow(
+      "Not Implemented.",
+    );
   });
 });
