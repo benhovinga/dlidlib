@@ -5,7 +5,7 @@ import BarcodeFile, {
 } from "./barcode";
 import { getDateParser, type DateObject, type DateParserFn } from "./dates";
 import IssuingAuthority, {
-  type AuthorityCountryCode,
+  type CountryCode,
   type JurisdictionCode,
 } from "./authority";
 
@@ -18,6 +18,6 @@ export {
   type DateObject,
   type DateParserFn,
   IssuingAuthority,
-  type AuthorityCountryCode,
+  type CountryCode,
   type JurisdictionCode,
 };

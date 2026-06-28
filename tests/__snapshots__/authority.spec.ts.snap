@@ -3,433 +3,433 @@
 exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
 [
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 604426,
     "jurisdiction": "Prince Edward Island",
     "jurisdictionCode": "PE",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 604427,
     "jurisdiction": "American Samoa",
     "jurisdictionCode": "AS",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 604428,
     "jurisdiction": "Quebec",
     "jurisdictionCode": "QC",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 604429,
     "jurisdiction": "Yukon",
     "jurisdictionCode": "YT",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 604430,
     "jurisdiction": "Norther Marianna Islands",
     "jurisdictionCode": "MP",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 604431,
     "jurisdiction": "Puerto Rico",
     "jurisdictionCode": "PR",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 604432,
     "jurisdiction": "Alberta",
     "jurisdictionCode": "AB",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 604433,
     "jurisdiction": "Nunavut",
     "jurisdictionCode": "NU",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 604434,
     "jurisdiction": "Northwest Territories",
     "jurisdictionCode": "NT",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636000,
     "jurisdiction": "Virginia",
     "jurisdictionCode": "VA",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636001,
     "jurisdiction": "New York",
     "jurisdictionCode": "NY",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636002,
     "jurisdiction": "Massachusetts",
     "jurisdictionCode": "MA",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636003,
     "jurisdiction": "Maryland",
     "jurisdictionCode": "MD",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636004,
     "jurisdiction": "North Carolina",
     "jurisdictionCode": "NC",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636005,
     "jurisdiction": "South Carolina",
     "jurisdictionCode": "SC",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636006,
     "jurisdiction": "Connecticut",
     "jurisdictionCode": "CT",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636007,
     "jurisdiction": "Louisiana",
     "jurisdictionCode": "LA",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636008,
     "jurisdiction": "Montana",
     "jurisdictionCode": "MT",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636009,
     "jurisdiction": "New Mexico",
     "jurisdictionCode": "NM",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636010,
     "jurisdiction": "Florida",
     "jurisdictionCode": "FL",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636011,
     "jurisdiction": "Delaware",
     "jurisdictionCode": "DE",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 636012,
     "jurisdiction": "Ontario",
     "jurisdictionCode": "ON",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 636013,
     "jurisdiction": "Nova Scotia",
     "jurisdictionCode": "NS",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636014,
     "jurisdiction": "California",
     "jurisdictionCode": "CA",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636015,
     "jurisdiction": "Texas",
     "jurisdictionCode": "TX",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 636016,
     "jurisdiction": "Newfoundland",
     "jurisdictionCode": "NF",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 636017,
     "jurisdiction": "New Brunswick",
     "jurisdictionCode": "NB",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636018,
     "jurisdiction": "Iowa",
     "jurisdictionCode": "IA",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636019,
     "jurisdiction": "Guam",
     "jurisdictionCode": "GU",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636020,
     "jurisdiction": "Colorado",
     "jurisdictionCode": "GM",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636021,
     "jurisdiction": "Arkansas",
     "jurisdictionCode": "AR",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636022,
     "jurisdiction": "Kansas",
     "jurisdictionCode": "KS",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636023,
     "jurisdiction": "Ohio",
     "jurisdictionCode": "OH",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636024,
     "jurisdiction": "Vermont",
     "jurisdictionCode": "VT",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636025,
     "jurisdiction": "Pennsylvania",
     "jurisdictionCode": "PA",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636026,
     "jurisdiction": "Arizona",
     "jurisdictionCode": "AZ",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636027,
     "jurisdiction": "State Dept. (Diplomatic)",
     "jurisdictionCode": null,
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 636028,
     "jurisdiction": "British Columbia",
     "jurisdictionCode": "BC",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636029,
     "jurisdiction": "Oregon",
     "jurisdictionCode": "OR",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636030,
     "jurisdiction": "Missouri",
     "jurisdictionCode": "MO",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636031,
     "jurisdiction": "Wisconsin",
     "jurisdictionCode": "WI",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636032,
     "jurisdiction": "Michigan",
     "jurisdictionCode": "MI",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636033,
     "jurisdiction": "Alabama",
     "jurisdictionCode": "AL",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636034,
     "jurisdiction": "North Dakota",
     "jurisdictionCode": "ND",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636035,
     "jurisdiction": "Illinois",
     "jurisdictionCode": "IL",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636036,
     "jurisdiction": "New Jersey",
     "jurisdictionCode": "NJ",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636037,
     "jurisdiction": "Indiana",
     "jurisdictionCode": "IN",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636038,
     "jurisdiction": "Minnesota",
     "jurisdictionCode": "MN",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636039,
     "jurisdiction": "New Hampshire",
     "jurisdictionCode": "NH",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636040,
     "jurisdiction": "Utah",
     "jurisdictionCode": "UT",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636041,
     "jurisdiction": "Maine",
     "jurisdictionCode": "ME",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636042,
     "jurisdiction": "South Dakota",
     "jurisdictionCode": "SD",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636043,
     "jurisdiction": "District of Columbia",
     "jurisdictionCode": "DC",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 636044,
     "jurisdiction": "Saskatchewan",
     "jurisdictionCode": "SK",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636045,
     "jurisdiction": "Washington",
     "jurisdictionCode": "WA",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636046,
     "jurisdiction": "Kentucky",
     "jurisdictionCode": "KY",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636047,
     "jurisdiction": "Hawaii",
     "jurisdictionCode": "HI",
   },
   IssuingAuthority {
-    "country": "CAN",
+    "countryCode": "CAN",
     "issuerId": 636048,
     "jurisdiction": "Manitoba",
     "jurisdictionCode": "MB",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636049,
     "jurisdiction": "Nevada",
     "jurisdictionCode": "NV",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636050,
     "jurisdiction": "Idaho",
     "jurisdictionCode": "ID",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636051,
     "jurisdiction": "Mississippi",
     "jurisdictionCode": "MS",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636052,
     "jurisdiction": "Rhode Island",
     "jurisdictionCode": "RI",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636053,
     "jurisdiction": "Tennessee",
     "jurisdictionCode": "TN",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636054,
     "jurisdiction": "Nebraska",
     "jurisdictionCode": "NE",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636055,
     "jurisdiction": "Georgia",
     "jurisdictionCode": "GA",
   },
   IssuingAuthority {
-    "country": "MEX",
+    "countryCode": "MEX",
     "issuerId": 636056,
     "jurisdiction": "Coahuila",
     "jurisdictionCode": "CU",
   },
   IssuingAuthority {
-    "country": "MEX",
+    "countryCode": "MEX",
     "issuerId": 636057,
     "jurisdiction": "Hidalgo",
     "jurisdictionCode": "HL",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636058,
     "jurisdiction": "Oklahoma",
     "jurisdictionCode": "OK",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636059,
     "jurisdiction": "Alaska",
     "jurisdictionCode": "AK",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636060,
     "jurisdiction": "Wyoming",
     "jurisdictionCode": "WY",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636061,
     "jurisdiction": "West Virginia",
     "jurisdictionCode": "WV",
   },
   IssuingAuthority {
-    "country": "USA",
+    "countryCode": "USA",
     "issuerId": 636062,
     "jurisdiction": "Virgin Islands",
     "jurisdictionCode": "VI",
@@ -447,7 +447,7 @@ exports[`Test the COUNTRIES static property > matches snapshot 1`] = `
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604426' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 604426,
   "jurisdiction": "Prince Edward Island",
   "jurisdictionCode": "PE",
@@ -456,7 +456,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604427' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 604427,
   "jurisdiction": "American Samoa",
   "jurisdictionCode": "AS",
@@ -465,7 +465,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604428' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 604428,
   "jurisdiction": "Quebec",
   "jurisdictionCode": "QC",
@@ -474,7 +474,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604429' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 604429,
   "jurisdiction": "Yukon",
   "jurisdictionCode": "YT",
@@ -483,7 +483,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604430' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 604430,
   "jurisdiction": "Norther Marianna Islands",
   "jurisdictionCode": "MP",
@@ -492,7 +492,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604431' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 604431,
   "jurisdiction": "Puerto Rico",
   "jurisdictionCode": "PR",
@@ -501,7 +501,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604432' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 604432,
   "jurisdiction": "Alberta",
   "jurisdictionCode": "AB",
@@ -510,7 +510,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604433' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 604433,
   "jurisdiction": "Nunavut",
   "jurisdictionCode": "NU",
@@ -519,7 +519,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604434' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 604434,
   "jurisdiction": "Northwest Territories",
   "jurisdictionCode": "NT",
@@ -528,7 +528,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636000' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636000,
   "jurisdiction": "Virginia",
   "jurisdictionCode": "VA",
@@ -537,7 +537,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636001' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636001,
   "jurisdiction": "New York",
   "jurisdictionCode": "NY",
@@ -546,7 +546,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636002' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636002,
   "jurisdiction": "Massachusetts",
   "jurisdictionCode": "MA",
@@ -555,7 +555,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636003' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636003,
   "jurisdiction": "Maryland",
   "jurisdictionCode": "MD",
@@ -564,7 +564,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636004' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636004,
   "jurisdiction": "North Carolina",
   "jurisdictionCode": "NC",
@@ -573,7 +573,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636005' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636005,
   "jurisdiction": "South Carolina",
   "jurisdictionCode": "SC",
@@ -582,7 +582,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636006' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636006,
   "jurisdiction": "Connecticut",
   "jurisdictionCode": "CT",
@@ -591,7 +591,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636007' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636007,
   "jurisdiction": "Louisiana",
   "jurisdictionCode": "LA",
@@ -600,7 +600,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636008' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636008,
   "jurisdiction": "Montana",
   "jurisdictionCode": "MT",
@@ -609,7 +609,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636009' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636009,
   "jurisdiction": "New Mexico",
   "jurisdictionCode": "NM",
@@ -618,7 +618,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636010' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636010,
   "jurisdiction": "Florida",
   "jurisdictionCode": "FL",
@@ -627,7 +627,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636011' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636011,
   "jurisdiction": "Delaware",
   "jurisdictionCode": "DE",
@@ -636,7 +636,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636012' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 636012,
   "jurisdiction": "Ontario",
   "jurisdictionCode": "ON",
@@ -645,7 +645,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636013' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 636013,
   "jurisdiction": "Nova Scotia",
   "jurisdictionCode": "NS",
@@ -654,7 +654,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636014' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636014,
   "jurisdiction": "California",
   "jurisdictionCode": "CA",
@@ -663,7 +663,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636015' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636015,
   "jurisdiction": "Texas",
   "jurisdictionCode": "TX",
@@ -672,7 +672,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636016' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 636016,
   "jurisdiction": "Newfoundland",
   "jurisdictionCode": "NF",
@@ -681,7 +681,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636017' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 636017,
   "jurisdiction": "New Brunswick",
   "jurisdictionCode": "NB",
@@ -690,7 +690,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636018' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636018,
   "jurisdiction": "Iowa",
   "jurisdictionCode": "IA",
@@ -699,7 +699,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636019' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636019,
   "jurisdiction": "Guam",
   "jurisdictionCode": "GU",
@@ -708,7 +708,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636020' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636020,
   "jurisdiction": "Colorado",
   "jurisdictionCode": "GM",
@@ -717,7 +717,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636021' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636021,
   "jurisdiction": "Arkansas",
   "jurisdictionCode": "AR",
@@ -726,7 +726,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636022' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636022,
   "jurisdiction": "Kansas",
   "jurisdictionCode": "KS",
@@ -735,7 +735,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636023' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636023,
   "jurisdiction": "Ohio",
   "jurisdictionCode": "OH",
@@ -744,7 +744,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636024' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636024,
   "jurisdiction": "Vermont",
   "jurisdictionCode": "VT",
@@ -753,7 +753,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636025' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636025,
   "jurisdiction": "Pennsylvania",
   "jurisdictionCode": "PA",
@@ -762,7 +762,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636026' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636026,
   "jurisdiction": "Arizona",
   "jurisdictionCode": "AZ",
@@ -771,7 +771,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636027' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636027,
   "jurisdiction": "State Dept. (Diplomatic)",
   "jurisdictionCode": null,
@@ -780,7 +780,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636028' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 636028,
   "jurisdiction": "British Columbia",
   "jurisdictionCode": "BC",
@@ -789,7 +789,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636029' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636029,
   "jurisdiction": "Oregon",
   "jurisdictionCode": "OR",
@@ -798,7 +798,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636030' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636030,
   "jurisdiction": "Missouri",
   "jurisdictionCode": "MO",
@@ -807,7 +807,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636031' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636031,
   "jurisdiction": "Wisconsin",
   "jurisdictionCode": "WI",
@@ -816,7 +816,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636032' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636032,
   "jurisdiction": "Michigan",
   "jurisdictionCode": "MI",
@@ -825,7 +825,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636033' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636033,
   "jurisdiction": "Alabama",
   "jurisdictionCode": "AL",
@@ -834,7 +834,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636034' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636034,
   "jurisdiction": "North Dakota",
   "jurisdictionCode": "ND",
@@ -843,7 +843,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636035' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636035,
   "jurisdiction": "Illinois",
   "jurisdictionCode": "IL",
@@ -852,7 +852,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636036' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636036,
   "jurisdiction": "New Jersey",
   "jurisdictionCode": "NJ",
@@ -861,7 +861,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636037' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636037,
   "jurisdiction": "Indiana",
   "jurisdictionCode": "IN",
@@ -870,7 +870,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636038' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636038,
   "jurisdiction": "Minnesota",
   "jurisdictionCode": "MN",
@@ -879,7 +879,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636039' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636039,
   "jurisdiction": "New Hampshire",
   "jurisdictionCode": "NH",
@@ -888,7 +888,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636040' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636040,
   "jurisdiction": "Utah",
   "jurisdictionCode": "UT",
@@ -897,7 +897,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636041' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636041,
   "jurisdiction": "Maine",
   "jurisdictionCode": "ME",
@@ -906,7 +906,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636042' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636042,
   "jurisdiction": "South Dakota",
   "jurisdictionCode": "SD",
@@ -915,7 +915,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636043' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636043,
   "jurisdiction": "District of Columbia",
   "jurisdictionCode": "DC",
@@ -924,7 +924,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636044' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 636044,
   "jurisdiction": "Saskatchewan",
   "jurisdictionCode": "SK",
@@ -933,7 +933,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636045' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636045,
   "jurisdiction": "Washington",
   "jurisdictionCode": "WA",
@@ -942,7 +942,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636046' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636046,
   "jurisdiction": "Kentucky",
   "jurisdictionCode": "KY",
@@ -951,7 +951,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636047' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636047,
   "jurisdiction": "Hawaii",
   "jurisdictionCode": "HI",
@@ -960,7 +960,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636048' 1`] = `
 IssuingAuthority {
-  "country": "CAN",
+  "countryCode": "CAN",
   "issuerId": 636048,
   "jurisdiction": "Manitoba",
   "jurisdictionCode": "MB",
@@ -969,7 +969,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636049' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636049,
   "jurisdiction": "Nevada",
   "jurisdictionCode": "NV",
@@ -978,7 +978,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636050' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636050,
   "jurisdiction": "Idaho",
   "jurisdictionCode": "ID",
@@ -987,7 +987,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636051' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636051,
   "jurisdiction": "Mississippi",
   "jurisdictionCode": "MS",
@@ -996,7 +996,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636052' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636052,
   "jurisdiction": "Rhode Island",
   "jurisdictionCode": "RI",
@@ -1005,7 +1005,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636053' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636053,
   "jurisdiction": "Tennessee",
   "jurisdictionCode": "TN",
@@ -1014,7 +1014,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636054' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636054,
   "jurisdiction": "Nebraska",
   "jurisdictionCode": "NE",
@@ -1023,7 +1023,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636055' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636055,
   "jurisdiction": "Georgia",
   "jurisdictionCode": "GA",
@@ -1032,7 +1032,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636056' 1`] = `
 IssuingAuthority {
-  "country": "MEX",
+  "countryCode": "MEX",
   "issuerId": 636056,
   "jurisdiction": "Coahuila",
   "jurisdictionCode": "CU",
@@ -1041,7 +1041,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636057' 1`] = `
 IssuingAuthority {
-  "country": "MEX",
+  "countryCode": "MEX",
   "issuerId": 636057,
   "jurisdiction": "Hidalgo",
   "jurisdictionCode": "HL",
@@ -1050,7 +1050,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636058' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636058,
   "jurisdiction": "Oklahoma",
   "jurisdictionCode": "OK",
@@ -1059,7 +1059,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636059' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636059,
   "jurisdiction": "Alaska",
   "jurisdictionCode": "AK",
@@ -1068,7 +1068,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636060' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636060,
   "jurisdiction": "Wyoming",
   "jurisdictionCode": "WY",
@@ -1077,7 +1077,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636061' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636061,
   "jurisdiction": "West Virginia",
   "jurisdictionCode": "WV",
@@ -1086,7 +1086,7 @@ IssuingAuthority {
 
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636062' 1`] = `
 IssuingAuthority {
-  "country": "USA",
+  "countryCode": "USA",
   "issuerId": 636062,
   "jurisdiction": "Virgin Islands",
   "jurisdictionCode": "VI",
