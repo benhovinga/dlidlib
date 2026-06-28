@@ -3,7 +3,7 @@ import BarcodeFile, {
   type SubfileDesignator,
   type Subfile,
 } from "./barcode";
-import { getDateParser, type DateObject, type DateParserFn } from "./dates";
+import { getDateParser, type DateParts, type DateParserFn } from "./dates";
 import IssuingAuthority, {
   type CountryCode,
   type JurisdictionCode,
@@ -15,7 +15,7 @@ export {
   type SubfileDesignator,
   type Subfile,
   getDateParser,
-  type DateObject,
+  type DateParts,
   type DateParserFn,
   IssuingAuthority,
   type CountryCode,
