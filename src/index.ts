@@ -4,7 +4,10 @@ import BarcodeFile, {
   type Subfile,
 } from "./barcode";
 import { getDateParser, type DateObject, type DateParserFn } from "./dates";
-import IssuingAuthority from "./authority";
+import IssuingAuthority, {
+  type AuthorityCountryCode,
+  type JurisdictionCode,
+} from "./authority";
 
 export {
   BarcodeFile,
@@ -15,4 +18,6 @@ export {
   type DateObject,
   type DateParserFn,
   IssuingAuthority,
+  type AuthorityCountryCode,
+  type JurisdictionCode,
 };
