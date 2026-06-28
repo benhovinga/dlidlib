@@ -4,7 +4,7 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
 [
   IssuingAuthority {
     "abbr": "PE",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 604426,
     "jurisdiction": "Prince Edward Island",
   },
@@ -16,13 +16,13 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "QC",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 604428,
     "jurisdiction": "Quebec",
   },
   IssuingAuthority {
     "abbr": "YT",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 604429,
     "jurisdiction": "Yukon",
   },
@@ -40,19 +40,19 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "AB",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 604432,
     "jurisdiction": "Alberta",
   },
   IssuingAuthority {
     "abbr": "NU",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 604433,
     "jurisdiction": "Nunavut",
   },
   IssuingAuthority {
     "abbr": "NT",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 604434,
     "jurisdiction": "Northwest Territories",
   },
@@ -130,13 +130,13 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "ON",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 636012,
     "jurisdiction": "Ontario",
   },
   IssuingAuthority {
     "abbr": "NS",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 636013,
     "jurisdiction": "Nova Scotia",
   },
@@ -154,13 +154,13 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "NF",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 636016,
     "jurisdiction": "Newfoundland",
   },
   IssuingAuthority {
     "abbr": "NB",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 636017,
     "jurisdiction": "New Brunswick",
   },
@@ -226,7 +226,7 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "BC",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 636028,
     "jurisdiction": "British Columbia",
   },
@@ -322,7 +322,7 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "SK",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 636044,
     "jurisdiction": "Saskatchewan",
   },
@@ -346,7 +346,7 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "MB",
-    "country": "Canada",
+    "country": "CAN",
     "issuerId": 636048,
     "jurisdiction": "Manitoba",
   },
@@ -394,13 +394,13 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
   },
   IssuingAuthority {
     "abbr": "CU",
-    "country": "Mexico",
+    "country": "MEX",
     "issuerId": 636056,
     "jurisdiction": "Coahuila",
   },
   IssuingAuthority {
     "abbr": "HL",
-    "country": "Mexico",
+    "country": "MEX",
     "issuerId": 636057,
     "jurisdiction": "Hidalgo",
   },
@@ -435,4 +435,652 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
     "jurisdiction": "Virgin Islands",
   },
 ]
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604426' 1`] = `
+IssuingAuthority {
+  "abbr": "PE",
+  "country": "CAN",
+  "issuerId": 604426,
+  "jurisdiction": "Prince Edward Island",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604427' 1`] = `
+IssuingAuthority {
+  "abbr": "AS",
+  "country": "USA",
+  "issuerId": 604427,
+  "jurisdiction": "American Samoa",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604428' 1`] = `
+IssuingAuthority {
+  "abbr": "QC",
+  "country": "CAN",
+  "issuerId": 604428,
+  "jurisdiction": "Quebec",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604429' 1`] = `
+IssuingAuthority {
+  "abbr": "YT",
+  "country": "CAN",
+  "issuerId": 604429,
+  "jurisdiction": "Yukon",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604430' 1`] = `
+IssuingAuthority {
+  "abbr": "MP",
+  "country": "USA",
+  "issuerId": 604430,
+  "jurisdiction": "Norther Marianna Islands",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604431' 1`] = `
+IssuingAuthority {
+  "abbr": "PR",
+  "country": "USA",
+  "issuerId": 604431,
+  "jurisdiction": "Puerto Rico",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604432' 1`] = `
+IssuingAuthority {
+  "abbr": "AB",
+  "country": "CAN",
+  "issuerId": 604432,
+  "jurisdiction": "Alberta",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604433' 1`] = `
+IssuingAuthority {
+  "abbr": "NU",
+  "country": "CAN",
+  "issuerId": 604433,
+  "jurisdiction": "Nunavut",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604434' 1`] = `
+IssuingAuthority {
+  "abbr": "NT",
+  "country": "CAN",
+  "issuerId": 604434,
+  "jurisdiction": "Northwest Territories",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636000' 1`] = `
+IssuingAuthority {
+  "abbr": "VA",
+  "country": "USA",
+  "issuerId": 636000,
+  "jurisdiction": "Virginia",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636001' 1`] = `
+IssuingAuthority {
+  "abbr": "NY",
+  "country": "USA",
+  "issuerId": 636001,
+  "jurisdiction": "New York",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636002' 1`] = `
+IssuingAuthority {
+  "abbr": "MA",
+  "country": "USA",
+  "issuerId": 636002,
+  "jurisdiction": "Massachusetts",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636003' 1`] = `
+IssuingAuthority {
+  "abbr": "MD",
+  "country": "USA",
+  "issuerId": 636003,
+  "jurisdiction": "Maryland",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636004' 1`] = `
+IssuingAuthority {
+  "abbr": "NC",
+  "country": "USA",
+  "issuerId": 636004,
+  "jurisdiction": "North Carolina",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636005' 1`] = `
+IssuingAuthority {
+  "abbr": "SC",
+  "country": "USA",
+  "issuerId": 636005,
+  "jurisdiction": "South Carolina",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636006' 1`] = `
+IssuingAuthority {
+  "abbr": "CT",
+  "country": "USA",
+  "issuerId": 636006,
+  "jurisdiction": "Connecticut",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636007' 1`] = `
+IssuingAuthority {
+  "abbr": "LA",
+  "country": "USA",
+  "issuerId": 636007,
+  "jurisdiction": "Louisiana",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636008' 1`] = `
+IssuingAuthority {
+  "abbr": "MT",
+  "country": "USA",
+  "issuerId": 636008,
+  "jurisdiction": "Montana",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636009' 1`] = `
+IssuingAuthority {
+  "abbr": "NM",
+  "country": "USA",
+  "issuerId": 636009,
+  "jurisdiction": "New Mexico",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636010' 1`] = `
+IssuingAuthority {
+  "abbr": "FL",
+  "country": "USA",
+  "issuerId": 636010,
+  "jurisdiction": "Florida",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636011' 1`] = `
+IssuingAuthority {
+  "abbr": "DE",
+  "country": "USA",
+  "issuerId": 636011,
+  "jurisdiction": "Delaware",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636012' 1`] = `
+IssuingAuthority {
+  "abbr": "ON",
+  "country": "CAN",
+  "issuerId": 636012,
+  "jurisdiction": "Ontario",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636013' 1`] = `
+IssuingAuthority {
+  "abbr": "NS",
+  "country": "CAN",
+  "issuerId": 636013,
+  "jurisdiction": "Nova Scotia",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636014' 1`] = `
+IssuingAuthority {
+  "abbr": "CA",
+  "country": "USA",
+  "issuerId": 636014,
+  "jurisdiction": "California",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636015' 1`] = `
+IssuingAuthority {
+  "abbr": "TX",
+  "country": "USA",
+  "issuerId": 636015,
+  "jurisdiction": "Texas",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636016' 1`] = `
+IssuingAuthority {
+  "abbr": "NF",
+  "country": "CAN",
+  "issuerId": 636016,
+  "jurisdiction": "Newfoundland",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636017' 1`] = `
+IssuingAuthority {
+  "abbr": "NB",
+  "country": "CAN",
+  "issuerId": 636017,
+  "jurisdiction": "New Brunswick",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636018' 1`] = `
+IssuingAuthority {
+  "abbr": "IA",
+  "country": "USA",
+  "issuerId": 636018,
+  "jurisdiction": "Iowa",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636019' 1`] = `
+IssuingAuthority {
+  "abbr": "GU",
+  "country": "USA",
+  "issuerId": 636019,
+  "jurisdiction": "Guam",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636020' 1`] = `
+IssuingAuthority {
+  "abbr": "GM",
+  "country": "USA",
+  "issuerId": 636020,
+  "jurisdiction": "Colorado",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636021' 1`] = `
+IssuingAuthority {
+  "abbr": "AR",
+  "country": "USA",
+  "issuerId": 636021,
+  "jurisdiction": "Arkansas",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636022' 1`] = `
+IssuingAuthority {
+  "abbr": "KS",
+  "country": "USA",
+  "issuerId": 636022,
+  "jurisdiction": "Kansas",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636023' 1`] = `
+IssuingAuthority {
+  "abbr": "OH",
+  "country": "USA",
+  "issuerId": 636023,
+  "jurisdiction": "Ohio",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636024' 1`] = `
+IssuingAuthority {
+  "abbr": "VT",
+  "country": "USA",
+  "issuerId": 636024,
+  "jurisdiction": "Vermont",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636025' 1`] = `
+IssuingAuthority {
+  "abbr": "PA",
+  "country": "USA",
+  "issuerId": 636025,
+  "jurisdiction": "Pennsylvania",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636026' 1`] = `
+IssuingAuthority {
+  "abbr": "AZ",
+  "country": "USA",
+  "issuerId": 636026,
+  "jurisdiction": "Arizona",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636027' 1`] = `
+IssuingAuthority {
+  "abbr": null,
+  "country": "USA",
+  "issuerId": 636027,
+  "jurisdiction": "State Dept. (Diplomatic)",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636028' 1`] = `
+IssuingAuthority {
+  "abbr": "BC",
+  "country": "CAN",
+  "issuerId": 636028,
+  "jurisdiction": "British Columbia",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636029' 1`] = `
+IssuingAuthority {
+  "abbr": "OR",
+  "country": "USA",
+  "issuerId": 636029,
+  "jurisdiction": "Oregon",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636030' 1`] = `
+IssuingAuthority {
+  "abbr": "MO",
+  "country": "USA",
+  "issuerId": 636030,
+  "jurisdiction": "Missouri",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636031' 1`] = `
+IssuingAuthority {
+  "abbr": "WI",
+  "country": "USA",
+  "issuerId": 636031,
+  "jurisdiction": "Wisconsin",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636032' 1`] = `
+IssuingAuthority {
+  "abbr": "MI",
+  "country": "USA",
+  "issuerId": 636032,
+  "jurisdiction": "Michigan",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636033' 1`] = `
+IssuingAuthority {
+  "abbr": "AL",
+  "country": "USA",
+  "issuerId": 636033,
+  "jurisdiction": "Alabama",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636034' 1`] = `
+IssuingAuthority {
+  "abbr": "ND",
+  "country": "USA",
+  "issuerId": 636034,
+  "jurisdiction": "North Dakota",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636035' 1`] = `
+IssuingAuthority {
+  "abbr": "IL",
+  "country": "USA",
+  "issuerId": 636035,
+  "jurisdiction": "Illinois",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636036' 1`] = `
+IssuingAuthority {
+  "abbr": "NJ",
+  "country": "USA",
+  "issuerId": 636036,
+  "jurisdiction": "New Jersey",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636037' 1`] = `
+IssuingAuthority {
+  "abbr": "IN",
+  "country": "USA",
+  "issuerId": 636037,
+  "jurisdiction": "Indiana",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636038' 1`] = `
+IssuingAuthority {
+  "abbr": "MN",
+  "country": "USA",
+  "issuerId": 636038,
+  "jurisdiction": "Minnesota",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636039' 1`] = `
+IssuingAuthority {
+  "abbr": "NH",
+  "country": "USA",
+  "issuerId": 636039,
+  "jurisdiction": "New Hampshire",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636040' 1`] = `
+IssuingAuthority {
+  "abbr": "UT",
+  "country": "USA",
+  "issuerId": 636040,
+  "jurisdiction": "Utah",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636041' 1`] = `
+IssuingAuthority {
+  "abbr": "ME",
+  "country": "USA",
+  "issuerId": 636041,
+  "jurisdiction": "Maine",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636042' 1`] = `
+IssuingAuthority {
+  "abbr": "SD",
+  "country": "USA",
+  "issuerId": 636042,
+  "jurisdiction": "South Dakota",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636043' 1`] = `
+IssuingAuthority {
+  "abbr": "DC",
+  "country": "USA",
+  "issuerId": 636043,
+  "jurisdiction": "District of Columbia",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636044' 1`] = `
+IssuingAuthority {
+  "abbr": "SK",
+  "country": "CAN",
+  "issuerId": 636044,
+  "jurisdiction": "Saskatchewan",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636045' 1`] = `
+IssuingAuthority {
+  "abbr": "WA",
+  "country": "USA",
+  "issuerId": 636045,
+  "jurisdiction": "Washington",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636046' 1`] = `
+IssuingAuthority {
+  "abbr": "KY",
+  "country": "USA",
+  "issuerId": 636046,
+  "jurisdiction": "Kentucky",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636047' 1`] = `
+IssuingAuthority {
+  "abbr": "HI",
+  "country": "USA",
+  "issuerId": 636047,
+  "jurisdiction": "Hawaii",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636048' 1`] = `
+IssuingAuthority {
+  "abbr": "MB",
+  "country": "CAN",
+  "issuerId": 636048,
+  "jurisdiction": "Manitoba",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636049' 1`] = `
+IssuingAuthority {
+  "abbr": "NV",
+  "country": "USA",
+  "issuerId": 636049,
+  "jurisdiction": "Nevada",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636050' 1`] = `
+IssuingAuthority {
+  "abbr": "ID",
+  "country": "USA",
+  "issuerId": 636050,
+  "jurisdiction": "Idaho",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636051' 1`] = `
+IssuingAuthority {
+  "abbr": "MS",
+  "country": "USA",
+  "issuerId": 636051,
+  "jurisdiction": "Mississippi",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636052' 1`] = `
+IssuingAuthority {
+  "abbr": "RI",
+  "country": "USA",
+  "issuerId": 636052,
+  "jurisdiction": "Rhode Island",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636053' 1`] = `
+IssuingAuthority {
+  "abbr": "TN",
+  "country": "USA",
+  "issuerId": 636053,
+  "jurisdiction": "Tennessee",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636054' 1`] = `
+IssuingAuthority {
+  "abbr": "NE",
+  "country": "USA",
+  "issuerId": 636054,
+  "jurisdiction": "Nebraska",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636055' 1`] = `
+IssuingAuthority {
+  "abbr": "GA",
+  "country": "USA",
+  "issuerId": 636055,
+  "jurisdiction": "Georgia",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636056' 1`] = `
+IssuingAuthority {
+  "abbr": "CU",
+  "country": "MEX",
+  "issuerId": 636056,
+  "jurisdiction": "Coahuila",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636057' 1`] = `
+IssuingAuthority {
+  "abbr": "HL",
+  "country": "MEX",
+  "issuerId": 636057,
+  "jurisdiction": "Hidalgo",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636058' 1`] = `
+IssuingAuthority {
+  "abbr": "OK",
+  "country": "USA",
+  "issuerId": 636058,
+  "jurisdiction": "Oklahoma",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636059' 1`] = `
+IssuingAuthority {
+  "abbr": "AK",
+  "country": "USA",
+  "issuerId": 636059,
+  "jurisdiction": "Alaska",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636060' 1`] = `
+IssuingAuthority {
+  "abbr": "WY",
+  "country": "USA",
+  "issuerId": 636060,
+  "jurisdiction": "Wyoming",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636061' 1`] = `
+IssuingAuthority {
+  "abbr": "WV",
+  "country": "USA",
+  "issuerId": 636061,
+  "jurisdiction": "West Virginia",
+}
+`;
+
+exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '636062' 1`] = `
+IssuingAuthority {
+  "abbr": "VI",
+  "country": "USA",
+  "issuerId": 636062,
+  "jurisdiction": "Virgin Islands",
+}
 `;
