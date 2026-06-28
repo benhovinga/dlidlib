@@ -437,6 +437,14 @@ exports[`Test the AUTHORITIES static property > matches snapshot 1`] = `
 ]
 `;
 
+exports[`Test the COUNTRIES static property > matches snapshot 1`] = `
+[
+  "CAN",
+  "MEX",
+  "USA",
+]
+`;
+
 exports[`Test the getAuthorityById() static method > matches snapshot for issuerId '604426' 1`] = `
 IssuingAuthority {
   "abbr": "PE",

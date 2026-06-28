@@ -2,6 +2,15 @@ import { describe, test, expect } from "vitest";
 
 import IssuingAuthority from "../src/authority";
 
+describe("Test the COUNTRIES static property", () => {
+  test("matches snapshot", () => {
+    expect(IssuingAuthority.COUNTRIES).toMatchSnapshot();
+  });
+  test("is frozen", () => {
+    expect(Object.isFrozen(IssuingAuthority.COUNTRIES)).toBe(true);
+  });
+});
+
 describe("Test the AUTHORITIES static property", () => {
   test("matches snapshot", () => {
     expect(IssuingAuthority.AUTHORITIES).toMatchSnapshot();
@@ -9,7 +18,7 @@ describe("Test the AUTHORITIES static property", () => {
   test("is frozen", () => {
     expect(Object.isFrozen(IssuingAuthority.AUTHORITIES)).toBe(true);
   });
-  test("item is frozen", () => {
+  test("is deep frozen", () => {
     expect(Object.isFrozen(IssuingAuthority.AUTHORITIES[0])).toBe(true);
   });
 });
