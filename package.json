@@ -32,6 +32,7 @@
   },
   "scripts": {
     "build": "pnpm clean:build && tsc",
+    "ci:check": "pnpm format && pnpm lint && pnpm test:ci && tsc --noEmit",
     "clean:build": "rimraf dist",
     "clean:coverage": "rimraf coverage",
     "clean:package": "rimraf -g benhovinga-dlidlib-*.tgz",
