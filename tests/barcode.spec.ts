@@ -1,10 +1,14 @@
 import { describe, test, expect } from "vitest";
 
-import BarcodeFile, { type SubfileDesignator } from "../src/barcode";
+import BarcodeFile, {
+  type SubfileDesignator,
+  type AAMVAVersion,
+} from "../src/barcode";
 
 const CURRENT_VERSION = 11;
 
 const testBarcodeStrings: [number, string][] = [
+  // aamvaVersion, barcodeString
   [
     1,
     "@\n\x1e\rANSI 6360000102DL00390187ZV02260032DLDAQ0123456789ABC\n" +
@@ -34,7 +38,7 @@ const testBarcodeStrings: [number, string][] = [
 ];
 
 class BarcodeFileTestable extends BarcodeFile {
-  public static testHeaderLength(aamvaVersion: number) {
+  public static testHeaderLength(aamvaVersion: AAMVAVersion) {
     return this._headerLength(aamvaVersion);
   }
   public static testParseFileHeader(barcodeString: string) {
@@ -42,7 +46,7 @@ class BarcodeFileTestable extends BarcodeFile {
   }
   public static testParseSubfileDesignator(
     barcodeString: string,
-    aamvaVersion: number,
+    aamvaVersion: AAMVAVersion,
     designatorIndex: number,
   ) {
     return this._parseSubfileDesignator(
@@ -65,15 +69,22 @@ describe("Test the headerLength() static method", () => {
     expect(BarcodeFileTestable.testHeaderLength(1)).not.toBe(21);
   });
 
-  test.each([...Array(CURRENT_VERSION + 1).keys()].filter((i) => i > 1))(
-    "can return 21 for version %i",
-    (aamvaVersion) => {
-      expect(BarcodeFileTestable.testHeaderLength(aamvaVersion)).toBe(21);
-      expect(BarcodeFileTestable.testHeaderLength(aamvaVersion)).not.toBe(19);
-    },
-  );
+  // Generates a list of numbers from 2 to CURRENT_VERSION
+  const versions = (() => {
+    const arr = [];
+    for (let i = 2; i <= CURRENT_VERSION; i++) {
+      arr.push(i);
+    }
+    return arr;
+  })() as AAMVAVersion[];
+
+  test.each(versions)("can return 21 for version %i", (aamvaVersion) => {
+    expect(BarcodeFileTestable.testHeaderLength(aamvaVersion)).toBe(21);
+    expect(BarcodeFileTestable.testHeaderLength(aamvaVersion)).not.toBe(19);
+  });
 
   test("throws an error when version is not a integer", () => {
+    // @ts-expect-error Argument type is not assignable to parameter type
     expect(() => BarcodeFileTestable.testHeaderLength(1.1)).toThrow(
       "Argument 'aamvaVersion' must be an integer.",
     );
@@ -84,12 +95,11 @@ describe("Test the headerLength() static method", () => {
   });
 
   test("throws an error when version is out of range", () => {
-    expect(() => BarcodeFileTestable.testHeaderLength(0)).toThrow(
-      "Argument 'aamvaVersion' must is out of range (1-99).",
-    );
-    expect(() => BarcodeFileTestable.testHeaderLength(100)).toThrow(
-      "Argument 'aamvaVersion' must is out of range (1-99).",
-    );
+    const errMsg = /Argument 'aamvaVersion' must is out of range \(1-\d+\)\./;
+    // @ts-expect-error Argument type is not assignable to parameter type
+    expect(() => BarcodeFileTestable.testHeaderLength(0)).toThrow(errMsg);
+    // @ts-expect-error Argument type is not assignable to parameter type
+    expect(() => BarcodeFileTestable.testHeaderLength(100)).toThrow(errMsg);
   });
 });
 
@@ -131,6 +141,7 @@ describe("Test the parseFileHeader() static method", () => {
   });
 
   test.each([
+    // aamvaVersion, shortHeader
     [1, "@\n\x1e\rANSI 636000010"],
     [2, "@\n\x1e\rANSI 63600002010"],
     [3, "@\n\x1e\rANSI 63600003010"],
@@ -144,10 +155,10 @@ describe("Test the parseFileHeader() static method", () => {
     [11, "@\n\x1e\rANSI 63600011010"],
   ])(
     "throws an error when header length is too short (version: %i)",
-    (_, badString) => {
-      expect(() => BarcodeFileTestable.testParseFileHeader(badString)).toThrow(
-        "Header length is too short for version",
-      );
+    (_, shortHeader) => {
+      expect(() =>
+        BarcodeFileTestable.testParseFileHeader(shortHeader),
+      ).toThrow("Header length is too short for version");
     },
   );
 
@@ -163,6 +174,7 @@ describe("Test the parseFileHeader() static method", () => {
 
 describe("Test the parseSubfileDesignator() static method", () => {
   test.each([
+    // aamvaVersion, designatorIndex, barcodeString
     [1, 0, "@\n\x1e\rANSI 6360000102DL0039018"],
     [1, 1, "@\n\x1e\rANSI 6360000102DL00390187ZV0226003"],
     [10, 0, "@\n\x1e\rANSI 636000100102DL0041027"],
@@ -173,7 +185,7 @@ describe("Test the parseSubfileDesignator() static method", () => {
       expect(() =>
         BarcodeFileTestable.testParseSubfileDesignator(
           barcodeString,
-          aamvaVersion,
+          aamvaVersion as AAMVAVersion,
           designatorIndex,
         ),
       ).toThrow("Subfile designator is too short");
@@ -183,6 +195,7 @@ describe("Test the parseSubfileDesignator() static method", () => {
   test.each(
     testBarcodeStrings.flatMap((row) => {
       return [
+        // aamvaVersion, index, barcodeString
         [row[0], 0, row[1]],
         [row[0], 1, row[1]],
       ];
@@ -193,7 +206,7 @@ describe("Test the parseSubfileDesignator() static method", () => {
       expect(
         BarcodeFileTestable.testParseSubfileDesignator(
           barcodeString,
-          aamvaVersion,
+          aamvaVersion as AAMVAVersion,
           index,
         ),
       ).toMatchSnapshot();
@@ -253,6 +266,7 @@ describe("Test the parseSubfile() static method", () => {
   test.each(
     testBarcodeStrings.flatMap((row) => {
       return [
+        // aamvaVersion, index, barcodeString
         [row[0], 0, row[1]],
         [row[0], 1, row[1]],
       ];
@@ -262,7 +276,7 @@ describe("Test the parseSubfile() static method", () => {
     (aamvaVersion, index, barcodeString) => {
       const designator = BarcodeFileTestable.testParseSubfileDesignator(
         barcodeString,
-        aamvaVersion,
+        aamvaVersion as AAMVAVersion,
         index,
       );
       expect(
