@@ -6,6 +6,7 @@ export interface DateObject {
 
 export type DateParserFn = (dateStr: string) => DateObject;
 
+// Exported for testing only
 export function isoFormat(dateSrt: string): DateObject {
   // YYYYMMDD
   return {
@@ -15,6 +16,7 @@ export function isoFormat(dateSrt: string): DateObject {
   };
 }
 
+// Exported for testing only
 export function usaFormat(dateSrt: string): DateObject {
   // MMDDYYYY
   return {
