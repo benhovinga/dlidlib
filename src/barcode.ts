@@ -38,14 +38,14 @@ class BarcodeFile {
   /**
    * Parses a barcode byte string message into a BarcodeFile object.
    *
-   * @param barcodeString - A byte string style message from a barcode scanner
+   * @param barcodeStr - A byte string style message from a barcode scanner
    * @returns a new BarcodeFile object
    */
-  public static parse(barcodeString: string): BarcodeFile {
-    if (typeof barcodeString !== "string")
+  public static parse(barcodeStr: string): BarcodeFile {
+    if (typeof barcodeStr !== "string")
       throw new TypeError("Argument 'barcodeString' must be of type 'string'.");
 
-    const header = BarcodeFile._parseFileHeader(barcodeString);
+    const header = BarcodeFile._parseFileHeader(barcodeStr);
 
     if (header.numberOfEntries < 1)
       throw new Error("Number of entries cannot be less than 1");
@@ -53,11 +53,11 @@ class BarcodeFile {
     const subfiles = [];
     for (let i = 0; i < header.numberOfEntries; i++) {
       const designator = BarcodeFile._parseSubfileDesignator(
-        barcodeString,
+        barcodeStr,
         header.aamvaVersion,
         i,
       );
-      const subfile = BarcodeFile._parseSubfile(barcodeString, designator);
+      const subfile = BarcodeFile._parseSubfile(barcodeStr, designator);
       subfiles.push(subfile);
     }
 
@@ -77,37 +77,35 @@ class BarcodeFile {
     return aamvaVersion === 1 ? 19 : 21;
   }
 
-  protected static _parseFileHeader(barcodeString: string): FileHeader {
+  protected static _parseFileHeader(barcodeStr: string): FileHeader {
     const MIN_LENGTH = 17;
 
-    if (barcodeString.length < MIN_LENGTH)
+    if (barcodeStr.length < MIN_LENGTH)
       throw new Error("Header length is too short");
-    else if (barcodeString[0] !== BarcodeFile._COMPLIANCE_INDICATOR)
+    else if (barcodeStr[0] !== BarcodeFile._COMPLIANCE_INDICATOR)
       throw new Error("Header is missing compliance indicator");
-    else if (barcodeString[1] !== BarcodeFile._DATA_ELEMENT_SEPARATOR)
+    else if (barcodeStr[1] !== BarcodeFile._DATA_ELEMENT_SEPARATOR)
       throw new Error("Header is missing data element separator");
-    else if (barcodeString[2] !== BarcodeFile._RECORD_SEPARATOR)
+    else if (barcodeStr[2] !== BarcodeFile._RECORD_SEPARATOR)
       throw new Error("Header is missing record separator");
-    else if (barcodeString[3] !== BarcodeFile._SEGMENT_TERMINATOR)
+    else if (barcodeStr[3] !== BarcodeFile._SEGMENT_TERMINATOR)
       throw new Error("Header is missing segment terminator");
-    else if (barcodeString.slice(4, 9) !== BarcodeFile._FILE_TYPE)
+    else if (barcodeStr.slice(4, 9) !== BarcodeFile._FILE_TYPE)
       throw new Error("Header is missing file type");
 
     const aamvaVersion = Number.parseInt(
-      barcodeString.slice(15, 17),
+      barcodeStr.slice(15, 17),
     ) as AAMVAVersion;
 
-    if (barcodeString.length < BarcodeFile._headerLength(aamvaVersion))
+    if (barcodeStr.length < BarcodeFile._headerLength(aamvaVersion))
       throw new Error("Header length is too short for version");
 
-    const issuerId = Number.parseInt(barcodeString.slice(9, 15));
+    const issuerId = Number.parseInt(barcodeStr.slice(9, 15));
     const numberOfEntries = Number.parseInt(
-      aamvaVersion < 2
-        ? barcodeString.slice(17, 19)
-        : barcodeString.slice(19, 21),
+      aamvaVersion < 2 ? barcodeStr.slice(17, 19) : barcodeStr.slice(19, 21),
     );
     const jurisdictionVersion =
-      aamvaVersion < 2 ? 0 : Number.parseInt(barcodeString.slice(17, 19));
+      aamvaVersion < 2 ? 0 : Number.parseInt(barcodeStr.slice(17, 19));
 
     return {
       issuerId,
@@ -118,7 +116,7 @@ class BarcodeFile {
   }
 
   protected static _parseSubfileDesignator(
-    barcodeString: string,
+    barcodeStr: string,
     aamvaVersion: AAMVAVersion,
     designatorIndex: number,
   ): SubfileDesignator {
@@ -128,14 +126,12 @@ class BarcodeFile {
       designatorIndex * DESIGNATOR_LENGTH +
       BarcodeFile._headerLength(aamvaVersion);
 
-    if (barcodeString.length < cursor + DESIGNATOR_LENGTH)
+    if (barcodeStr.length < cursor + DESIGNATOR_LENGTH)
       throw new Error("Subfile designator is too short");
 
-    const subfileType = barcodeString.slice(cursor, cursor + 2);
-    const offset = Number.parseInt(barcodeString.slice(cursor + 2, cursor + 6));
-    const length = Number.parseInt(
-      barcodeString.slice(cursor + 6, cursor + 10),
-    );
+    const subfileType = barcodeStr.slice(cursor, cursor + 2);
+    const offset = Number.parseInt(barcodeStr.slice(cursor + 2, cursor + 6));
+    const length = Number.parseInt(barcodeStr.slice(cursor + 6, cursor + 10));
 
     return {
       subfileType,
@@ -145,21 +141,21 @@ class BarcodeFile {
   }
 
   protected static _parseSubfile(
-    barcodeString: string,
+    barcodeStr: string,
     designator: SubfileDesignator,
   ): Subfile {
     const { subfileType, offset, length } = designator;
     const endOffset = offset + length;
 
-    if (barcodeString.length < endOffset)
+    if (barcodeStr.length < endOffset)
       throw new Error("Subfile length is too short");
-    else if (barcodeString.slice(offset, offset + 2) != subfileType)
+    else if (barcodeStr.slice(offset, offset + 2) != subfileType)
       throw new Error("Subfile is missing subfile type");
-    else if (barcodeString[endOffset - 1] != BarcodeFile._SEGMENT_TERMINATOR) {
+    else if (barcodeStr[endOffset - 1] != BarcodeFile._SEGMENT_TERMINATOR) {
       throw new Error("Subfile is missing segment terminator");
     }
 
-    const items = barcodeString
+    const items = barcodeStr
       .slice(offset + 2, endOffset - 1)
       .split(BarcodeFile._DATA_ELEMENT_SEPARATOR);
 
