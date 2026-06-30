@@ -1,5 +1,5 @@
-import { type CountryCode } from "./authority";
-import { type AAMVAVersion } from "./barcode";
+import { type CountryCode } from "@/authority";
+import { type AAMVAVersion } from "@/barcode";
 
 export interface DateParts {
   year: number;
