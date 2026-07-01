@@ -9,6 +9,8 @@ import IssuingAuthority, {
   type JurisdictionCode,
 } from "@/authority";
 
+import * as fields from "@/fields";
+
 export {
   BarcodeFile,
   type FileHeader,
@@ -20,4 +22,5 @@ export {
   IssuingAuthority,
   type CountryCode,
   type JurisdictionCode,
+  fields,
 };

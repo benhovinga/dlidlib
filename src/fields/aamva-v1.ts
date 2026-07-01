@@ -1,9 +1,10 @@
-import { BaseAAMVAVersion, type CardType, type Field } from ".";
+import { FieldsBase, type CardType, type Field } from "./base";
+
 import { type CountryCode } from "@/authority";
 import { type DateParts } from "@/dates";
 
 /** AAMVA DL/ID Version 1 Fields */
-class AAMVAVersion1 extends BaseAAMVAVersion {
+class FieldsVersion1 extends FieldsBase {
   constructor(
     cardType: Extract<CardType, "DL"> = "DL",
     country: Extract<CountryCode, "USA"> = "USA",
@@ -11,6 +12,7 @@ class AAMVAVersion1 extends BaseAAMVAVersion {
     if (cardType !== "DL") throw new Error("Version 1 cardType must be 'DL'.");
     if (country !== "USA") throw new Error("Version 1 country must be 'USA'.");
     super(1, cardType, country);
+    Object.setPrototypeOf(this, FieldsVersion1.prototype);
   }
 
   DAA: Field<string> = {
@@ -387,4 +389,4 @@ class AAMVAVersion1 extends BaseAAMVAVersion {
   };
 }
 
-export default AAMVAVersion1;
+export default FieldsVersion1;

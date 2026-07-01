@@ -62,7 +62,11 @@
     ".": "./src/index.ts",
     "./authority": "./src/authority.ts",
     "./barcode": "./src/barcode.ts",
+    "./config": "./src/config.ts",
     "./dates": "./src/dates.ts",
+    "./fields": "./src/fields/index.ts",
+    "./fields/aamva-v1": "./src/fields/aamva-v1.ts",
+    "./fields/base": "./src/fields/base.ts",
     "./*": "./*"
   },
   "publishConfig": {
@@ -79,9 +83,25 @@
         "import": "./dist/barcode.js",
         "require": "./dist/barcode.cjs"
       },
+      "./config": {
+        "import": "./dist/config.js",
+        "require": "./dist/config.cjs"
+      },
       "./dates": {
         "import": "./dist/dates.js",
         "require": "./dist/dates.cjs"
+      },
+      "./fields": {
+        "import": "./dist/fields/index.js",
+        "require": "./dist/fields/index.cjs"
+      },
+      "./fields/aamva-v1": {
+        "import": "./dist/fields/aamva-v1.js",
+        "require": "./dist/fields/aamva-v1.cjs"
+      },
+      "./fields/base": {
+        "import": "./dist/fields/base.js",
+        "require": "./dist/fields/base.cjs"
       },
       "./*": "./*"
     }

@@ -1,5 +1,5 @@
 import { describe, test, expect, vi } from "vitest";
-import { type AAMVAVersion } from "../src/barcode";
+import { type AAMVAVersion } from "../src/config";
 import { type CountryCode } from "../src/authority";
 
 import { getDateParser, isoFormat, usaFormat } from "../src/dates";
@@ -62,7 +62,7 @@ describe.each(["isoFormat", "usaFormat"])(
 
 describe("Test the getDateParser() function", () => {
   const parserTests = [
-    ["USA", 1, "USA", usaDateStr, usaFormat],
+    ["ISO", 1, "USA", isoDateSrt, isoFormat],
     ["USA", 2, "USA", usaDateStr, usaFormat],
     ["ISO", 3, "CAN", isoDateSrt, isoFormat],
     ["USA", 3, "USA", usaDateStr, usaFormat],

@@ -1,5 +1,5 @@
 import { type CountryCode } from "@/authority";
-import { type AAMVAVersion } from "@/barcode";
+import { type AAMVAVersion } from "@/config";
 
 export interface DateParts {
   year: number;
@@ -80,8 +80,9 @@ export function getDateParser(
   aamvaVersion: AAMVAVersion,
   countryCode: CountryCode,
 ): DateParserFn {
-  return aamvaVersion > 2 &&
-    ISO_COUNTRIES.includes(countryCode.toUpperCase() as ISOCountry)
+  if (aamvaVersion === 1) return isoFormat;
+  else if (aamvaVersion === 2) return usaFormat;
+  return ISO_COUNTRIES.includes(countryCode.toUpperCase() as ISOCountry)
     ? isoFormat
     : usaFormat;
 }

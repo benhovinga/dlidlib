@@ -1,4 +1,4 @@
-export type AAMVAVersion = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
+import { CURRENT_AAMVA_VERSION, type AAMVAVersion } from "@/config";
 
 export interface FileHeader {
   issuerId: number;
@@ -19,8 +19,6 @@ export interface Subfile {
 }
 
 class BarcodeFile {
-  public static readonly CURRENT_AAMVA_VERSION = 11;
-
   protected static readonly _COMPLIANCE_INDICATOR = "\x40"; // Commercial At Sign (“@”) (ASCII/ISO 646 Decimal “64”) (ASCII/ISO 646 Hex “40”)
   protected static readonly _DATA_ELEMENT_SEPARATOR = "\x0a"; // Line Feed character (“LF” ASCII/ISO 646 Decimal “10”) (ASCII/ISO 646 Hex “0A”)
   protected static readonly _RECORD_SEPARATOR = "\x1e"; // Record Separator character (“RS” ASCII/ISO 646 Decimal “30”) (ASCII/ISO 646 Hex “1E”)
@@ -67,12 +65,9 @@ class BarcodeFile {
   protected static _headerLength(aamvaVersion: AAMVAVersion): 19 | 21 {
     if (typeof aamvaVersion !== "number" || !Number.isInteger(aamvaVersion))
       throw new TypeError("Argument 'aamvaVersion' must be an integer.");
-    else if (
-      aamvaVersion < 1 ||
-      aamvaVersion > BarcodeFile.CURRENT_AAMVA_VERSION
-    )
+    else if (aamvaVersion < 1 || aamvaVersion > CURRENT_AAMVA_VERSION)
       throw new RangeError(
-        `Argument 'aamvaVersion' must is out of range (1-${BarcodeFile.CURRENT_AAMVA_VERSION}).`,
+        `Argument 'aamvaVersion' must is out of range (1-${CURRENT_AAMVA_VERSION}).`,
       );
     return aamvaVersion === 1 ? 19 : 21;
   }

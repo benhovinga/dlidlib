@@ -8,4 +8,7 @@ export default defineConfig({
       checker: "tsc",
     },
   },
+  resolve: {
+    tsconfigPaths: true,
+  },
 });

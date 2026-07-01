@@ -1,9 +1,7 @@
 import { describe, test, expect } from "vitest";
 
-import BarcodeFile, {
-  type SubfileDesignator,
-  type AAMVAVersion,
-} from "../src/barcode";
+import BarcodeFile, { type SubfileDesignator } from "../src/barcode";
+import { type AAMVAVersion } from "../src/config";
 
 const CURRENT_VERSION = 11;
 
